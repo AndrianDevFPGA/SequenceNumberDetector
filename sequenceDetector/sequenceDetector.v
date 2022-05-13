@@ -83,3 +83,42 @@ module sequenceDetector(
       endcase
     end  
 endmodule
+
+/*
+
+module tb_test1(
+
+    );
+    
+  reg clk; 
+  reg rst; 
+  reg seq_in; 
+  wire  det_out; 
+    
+   sequenceDetector uut(
+                        clk,
+                        rst,
+                        seq_in,
+                        det_out 
+                        );
+  initial 
+    begin
+      clk = 0;
+      rst =1;
+      seq_in =0;
+      #10 
+      rst =0;
+      #30 
+      seq_in  =1;
+      #30
+      seq_in  =0;
+
+    end 
+    
+  always 
+    begin
+      #5 clk = ! clk;
+    end 
+endmodule
+
+*/
